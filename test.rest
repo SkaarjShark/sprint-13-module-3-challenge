@@ -1,0 +1,26 @@
+GET http://localhost:8000/api/users
+
+###
+GET http://localhost:8000/api/users/1
+
+###
+POST http://localhost:8000/api/users
+Content-Type: application/json
+
+{
+    "name": "Homer Simpson"
+}
+
+###
+DELETE http://localhost:8000/api/users/11
+
+###
+GET http://localhost:8000/api/users/1/posts
+
+###
+POST http://localhost:8000/api/users/1/posts
+Content-Type: application/json
+
+{
+    "text": "new text"
+}
